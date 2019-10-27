@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сортировка пузырьком</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Hepta+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+            <header class="header">
+                    <div class="container">
+                        <div class="header__inner">
+                            <div class="header__logo">
+                                <img src="image/1.jpg" alt="" width="200" class="header__img">
+                            </div>
+                            <nav class="nav">
+                                <a class="nav__link" href="">Сортировка пузырьком</a>
+                                
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            <section class="main">
+                <div class="container">
+                    <div class="main__inner">
+                    <button id="myBtn">Описание</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">
+                                    &times;
+                                </span>
+                                <p class="modal__title">Описание</p>
+                                Алгоритм состоит из повторяющихся проходов по сортируемому массиву. За каждый проход элементы последовательно сравниваются попарно и, если порядок в паре неверный, выполняется обмен элементов. Проходы по массиву повторяются N-1 раз или до тех пор, пока на очередном проходе не окажется, что обмены больше не нужны, что означает — массив отсортирован. При каждом проходе алгоритма по внутреннему циклу, очередной наибольший элемент массива ставится на своё место в конце массива рядом с предыдущим «наибольшим элементом», а наименьший элемент перемещается на одну позицию к началу массива («всплывает» до нужной позиции, как пузырёк в воде — отсюда и название алгоритма).<br>
+                                <div class="help">
+                                <img class="modal__image" src="image/1.jpg" alt="" width="100">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+            </section>
+            <section>
+                <canvas id="canvas" width="1500" height="1500">
+                    
+
+                    
+                </canvas>
+            </section>
+    
+        
+    <script src="app.js"></script>
+</body>
+</html>

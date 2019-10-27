@@ -1,0 +1,165 @@
+body{
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    background-color: #cdeefc;
+    
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+
+}
+p{
+    margin: 0 0 10px 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*процесс создания шапки*/
+
+.header{
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0;
+    align-items: center;
+}
+.header__img{
+    border: 2px solid rgb(19, 11, 90);
+    border-radius: 50%;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav__link{
+    font-size: 40px;
+    color: rgb(19, 11, 90);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    opacity: 0.75;
+    font-weight: 700;
+}
+.nav__link::first-letter{
+    margin-left: 0;
+    color: #4b0606;
+}
+.nav__link:hover{
+    opacity: 1;
+}
+
+
+
+/*стили для содержимого модального окна*/
+.modal{
+    position: relative;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+.modal-content{
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 70%;
+    height: 70%;
+    font-weight: 700;
+    line-height: 2;
+    border-radius: 20px;
+}
+
+.close{
+    float: right;
+    color: rgb(19, 7, 71);
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.main__inner{
+    
+    margin-top: 60px;
+    margin-left: 450px;
+}
+#myBtn{
+    height: 30px;
+    border: 1px solid #042c3d;
+    border-radius: 20px;
+    color: #042c3d;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+.modal__image{
+   position: absolute;
+}
+.help{
+    text-align: center;
+    margin-left: 400px;
+
+}
+.modal__title{
+    font-size: 40px;
+}
+.modal__title:hover{
+    color: #e40f0f;
+}
+
+/*стили для текста*/
+.text{
+    color: red;
+    margin-top: -1470px;
+    margin-left: 360px;
+    font-size: 25px;
+
+}
+.text2{
+    color: red;
+    margin-top: 250px;
+    margin-left: 360px;
+    font-size: 20px;
+
+}
+.text3{
+    color: red;
+    margin-left: 480px;
+    font-size: 70px;
+    margin-top: 300px;
+    font-weight:700;
+
+}
+
+/*расположение красной стрелки*/
+.arrow{
+    margin-top: 280px;
+    margin-left: 535px;
+}
